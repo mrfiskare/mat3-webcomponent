@@ -82,6 +82,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "port": 8996,
+            "host": "localhost"
+          },
           "configurations": {
             "production": {
               "buildTarget": "mat3-webcomponent:build:production"

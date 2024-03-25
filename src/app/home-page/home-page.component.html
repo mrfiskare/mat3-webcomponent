@@ -1,0 +1,22 @@
+<div
+  class="container"
+  style="
+    background: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  "
+>
+  <mat-card class="text-center w-50 py-3">
+    <mat-card-content class="py-2">Home page component works!</mat-card-content>
+    <mat-card-actions class="justify-content-evenly py-2">
+      <button mat-raised-button (click)="openSnackBar()">
+        Test Material Alert
+      </button>
+      <button mat-raised-button color="primary" routerLink="/404">
+        Go to 404
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

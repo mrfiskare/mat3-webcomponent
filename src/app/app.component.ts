@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { MatSlideToggle } from '@angular/material/slide-toggle';
 import { MatGridList } from '@angular/material/grid-list';
 
@@ -11,5 +11,7 @@ import { MatGridList } from '@angular/material/grid-list';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'mat3-webcomponent';
+  constructor(router: Router) {
+    router.initialNavigation();
+  }
 }

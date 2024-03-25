@@ -1,4 +1,4 @@
-# Material 3 Webcomponent
+# Material 3 Webcomponent 🌐
 
 ## Description
 
@@ -37,3 +37,31 @@ This will result in the build files withing the `dist/app-mat3-webcomponent` fol
 
 After building this application, you can import it into any application using the
 `<app-mat3-webcomponent></app-mat3-webcomponent>` HTML tag.
+
+## Using Prettier on the project
+
+
+### What is Prettier?
+
+Prettier is an opinionated code formatter tool. It's pretty handy when it comes to
+collaboration between developers.
+
+### How to use Prettier with WebStorm on Mac
+
+* Install Prettier with npm
+* Webstorm Settings → Languages & Frameworks → JavaScript →
+  1. Enable Prettier
+  2. Enable _On 'Reformat Code' action_
+  3. Enable _On save_
+
+### Debugging Prettier with WebStorm on Mac
+
+If, for some reason, Prettier doesn't work automatically on save, open the project in the Terminal and
+try debugging Prettier with `prettier . --write`.
+
+In my case, enabling the On save feature didn't work at all,
+so I had to do this additional step:
+
+Webstorm Settings → Tools → Actions on save → Tick _Reformat Code_
+
+This should fix the problem of Prettier not running on save.

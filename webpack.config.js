@@ -7,7 +7,10 @@ module.exports = {
       path.resolve(__dirname, 'dist/mat3-webcomponent/browser/main.js')
     ]
   },
-  output: { filename: '[name]', path: path.resolve(__dirname, 'dist') },
+  output: {
+    filename: '[name]',
+    path: path.resolve(__dirname, 'dist/mat3-webcomponent')
+  },
   module: {
     rules: [
       {

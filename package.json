@@ -4,7 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --output-hashing none --configuration production",
+    "build": "ng build && npm run webpack",
+    "clean-build-dir": "rm -rf dist/mat3-webcomponent/browser dist/mat3-webcomponent/3rdpartylicenses.txt",
+    "webpack": "webpack && npm run clean-build-dir && npm run webcomp-test",
+    "webcomp-test": "cp dist/mat3-webcomponent/bundle.js webcomp-test/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

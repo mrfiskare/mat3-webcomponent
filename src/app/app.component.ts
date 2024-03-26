@@ -4,7 +4,7 @@ import { MatSlideToggle } from '@angular/material/slide-toggle';
 import { MatGridList } from '@angular/material/grid-list';
 
 @Component({
-  selector: 'app-root',
+  selector: 'mat3-webcomponent',
   standalone: true,
   imports: [RouterOutlet, MatSlideToggle, MatGridList],
   templateUrl: './app.component.html',

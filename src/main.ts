@@ -27,5 +27,5 @@ import { createCustomElement } from '@angular/elements';
     injector: app.injector
   });
 
-  customElements.define('app-mat3-webcomponent', appElement);
+  customElements.define('mat3-webcomponent', appElement);
 })();

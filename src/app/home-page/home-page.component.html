@@ -1,22 +1,94 @@
-<div
-  class="container"
-  style="
-    background: bisque;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  "
->
-  <mat-card class="text-center w-50 py-3">
-    <mat-card-content class="py-2">Home page component works!</mat-card-content>
-    <mat-card-actions class="justify-content-evenly py-2">
-      <button mat-raised-button (click)="openSnackBar()">
-        Test Material Alert
-      </button>
-      <button mat-raised-button color="primary" routerLink="/404">
-        Go to 404
-      </button>
-    </mat-card-actions>
-  </mat-card>
+<mat-toolbar color="primary">My Toolbar</mat-toolbar>
+<div class="container">
+  <div
+    class="row mt-3 mb-5"
+    style="display: flex; justify-content: center; align-items: center"
+  >
+    <mat-card class="text-center w-50 py-3">
+      <mat-card-content class="py-2"
+        >Home page component works!</mat-card-content
+      >
+      <mat-card-actions class="justify-content-evenly py-2">
+        <button mat-raised-button (click)="openSnackBar()">
+          Test Material Alert
+        </button>
+        <button mat-raised-button color="primary" routerLink="/404">
+          Go to 404
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <!-- Button -->
+      <button mat-button color="primary">Primary Button</button>
+      <br />
+      <button mat-button color="accent">Accent Button</button>
+      <br />
+      <button mat-button color="warn">Warn Button</button>
+      <br /><br />
+
+      <!-- Checkbox -->
+      <mat-checkbox color="primary">Primary Checkbox</mat-checkbox>
+      <br />
+      <mat-checkbox color="accent">Accent Checkbox</mat-checkbox>
+      <br />
+      <mat-checkbox color="warn">Warn Checkbox</mat-checkbox>
+      <br /><br />
+
+      <!-- Select -->
+      <mat-form-field>
+        <mat-select placeholder="Primary Select" color="primary">
+          <mat-option value="option1">Option 1</mat-option>
+          <mat-option value="option2">Option 2</mat-option>
+          <mat-option value="option3">Option 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br />
+      <!-- Input -->
+      <mat-form-field>
+        <input matInput placeholder="Primary Input" color="primary" />
+      </mat-form-field>
+    </div>
+    <div class="col-4">
+      <!-- Radio Button -->
+      <mat-radio-group>
+        <mat-radio-button value="1" color="primary"
+          >Primary Radio</mat-radio-button
+        >
+        <br />
+        <mat-radio-button value="2" color="accent"
+          >Accent Radio</mat-radio-button
+        >
+        <br />
+        <mat-radio-button value="3" color="warn">Warn Radio</mat-radio-button>
+      </mat-radio-group>
+      <br /><br />
+
+      <!-- Slider -->
+      <mat-slider
+        min="0"
+        max="100"
+        step="1"
+        thumbLabel
+        color="primary"
+      ></mat-slider>
+      <br />
+      <mat-slider
+        min="0"
+        max="100"
+        step="1"
+        thumbLabel
+        color="accent"
+      ></mat-slider>
+      <br />
+      <mat-slider
+        min="0"
+        max="100"
+        step="1"
+        thumbLabel
+        color="warn"
+      ></mat-slider>
+    </div>
+  </div>
 </div>

@@ -8,6 +8,14 @@ import {
 } from '@angular/material/card';
 import { MatButton } from '@angular/material/button';
 import { RouterLink } from '@angular/router';
+import { MatToolbar } from '@angular/material/toolbar';
+import { MatSlider, MatSliderThumb } from '@angular/material/slider';
+import { MatOption } from '@angular/material/autocomplete';
+import { MatFormField } from '@angular/material/form-field';
+import { MatSelect } from '@angular/material/select';
+import { MatRadioButton, MatRadioGroup } from '@angular/material/radio';
+import { MatCheckbox } from '@angular/material/checkbox';
+import { MatInput } from '@angular/material/input';
 
 @Component({
   selector: 'app-home-page',
@@ -18,7 +26,16 @@ import { RouterLink } from '@angular/router';
     MatCardContent,
     MatCardActions,
     MatButton,
-    RouterLink
+    RouterLink,
+    MatToolbar,
+    MatSlider,
+    MatOption,
+    MatFormField,
+    MatSelect,
+    MatRadioButton,
+    MatRadioGroup,
+    MatCheckbox,
+    MatInput
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
@@ -28,7 +45,7 @@ export class HomePageComponent {
 
   openSnackBar() {
     this._snackBar.open('Material works!', 'Close', {
-      duration: 2000
+      duration: 4000
     });
   }
 }

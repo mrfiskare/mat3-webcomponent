@@ -1,6 +1,5 @@
 @use "@angular/material" as mat;
-@use "sass:map";
-@include mat.core();
+@use "@angular/material-experimental" as matx;
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 html,
@@ -103,4 +102,33 @@ $dracula-theme: mat.define-light-theme(
   )
 );
 
-@include mat.all-component-themes($dracula-theme);
+$m3-dark-theme: matx.define-theme(
+  (
+    color: (
+      theme-type: dark,
+      primary: matx.$m3-yellow-palette,
+      tertiary: matx.$m3-blue-palette
+    )
+  )
+);
+
+$m3-light-theme: matx.define-theme(
+  (
+    color: (
+      primary: matx.$m3-yellow-palette,
+      tertiary: matx.$m3-blue-palette
+    )
+  )
+);
+
+.dracula-theme {
+  @include mat.all-component-themes($dracula-theme);
+}
+
+.dark-theme {
+  @include mat.all-component-themes($m3-dark-theme);
+}
+
+.light-theme {
+  @include mat.all-component-themes($m3-light-theme);
+}

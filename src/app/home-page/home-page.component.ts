@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
 import { MatToolbar } from '@angular/material/toolbar';
 import { MatSlider } from '@angular/material/slider';
 import { MatOption } from '@angular/material/autocomplete';
-import { MatFormField } from '@angular/material/form-field';
+import { MatFormField, MatHint, MatLabel } from '@angular/material/form-field';
 import { MatSelect } from '@angular/material/select';
 import { MatRadioButton, MatRadioGroup } from '@angular/material/radio';
 import { MatCheckbox } from '@angular/material/checkbox';
@@ -38,7 +38,9 @@ import { MatIcon } from '@angular/material/icon';
     MatCheckbox,
     MatInput,
     MatAnchor,
-    MatIcon
+    MatIcon,
+    MatHint,
+    MatLabel
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'

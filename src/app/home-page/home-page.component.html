@@ -1,5 +1,6 @@
-<mat-toolbar color="primary">My Toolbar</mat-toolbar>
-<div class="container">
+<mat-toolbar color="primary" class="light-theme">My Toolbar</mat-toolbar>
+
+<div class="container light-theme">
   <div
     class="row mt-3 mb-5"
     style="display: flex; justify-content: center; align-items: center"
@@ -19,7 +20,88 @@
     </mat-card>
   </div>
   <div class="row">
-    <div class="col-4">
+    <div class="col-2 light-theme">
+      <form>
+        <mat-form-field style="width: 150px">
+          <mat-label>Favorite food</mat-label>
+          <input matInput placeholder="Input" />
+        </mat-form-field>
+        <mat-form-field style="width: 150px">
+          <mat-label>Select</mat-label>
+          <mat-select>
+            <mat-option value="one">First option</mat-option>
+            <mat-option value="two">Second option</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+    </div>
+    <div class="col-2 dracula-theme">
+      <form>
+        <mat-form-field style="width: 150px">
+          <mat-label>Favorite food</mat-label>
+          <input matInput placeholder="Input" />
+        </mat-form-field>
+        <mat-form-field style="width: 150px">
+          <mat-label>Select</mat-label>
+          <mat-select>
+            <mat-option value="one">First option</mat-option>
+            <mat-option value="two">Second option</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+    </div>
+    <div class="col-2 light-theme">
+      <form>
+        <mat-form-field style="width: 150px">
+          <mat-label>Fill form field</mat-label>
+          <input matInput placeholder="Placeholder" />
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 150px">
+          <mat-label>Outline form field</mat-label>
+          <input matInput placeholder="Placeholder" />
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </form>
+    </div>
+    <div class="col-2 dracula-theme">
+      <form>
+        <mat-form-field style="width: 150px">
+          <mat-label>Fill form field</mat-label>
+          <input matInput placeholder="Placeholder" />
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 150px">
+          <mat-label>Outline form field</mat-label>
+          <input matInput placeholder="Placeholder" />
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </form>
+    </div>
+    <div class="col-2 light-theme">
+      <!-- Button -->
+      <button mat-raised-button color="primary">Primary Button</button>
+      <br /><br />
+      <button mat-raised-button color="accent">Accent Button</button>
+      <br /><br />
+      <button mat-raised-button color="warn">Warn Button</button>
+    </div>
+    <div class="col-2 dracula-theme">
+      <!-- Button -->
+      <button mat-raised-button color="primary">Primary Button</button>
+      <br /><br />
+      <button mat-raised-button color="accent">Accent Button</button>
+      <br /><br />
+      <button mat-raised-button color="warn">Warn Button</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-2 light-theme">
       <!-- Button -->
       <button mat-button color="primary">Primary Button</button>
       <br />
@@ -27,7 +109,17 @@
       <br />
       <button mat-button color="warn">Warn Button</button>
       <br /><br />
-
+    </div>
+    <div class="col-2 dracula-theme">
+      <!-- Button -->
+      <button mat-button color="primary">Primary Button</button>
+      <br />
+      <button mat-button color="accent">Accent Button</button>
+      <br />
+      <button mat-button color="warn">Warn Button</button>
+      <br /><br />
+    </div>
+    <div class="col-2 light-theme">
       <!-- Checkbox -->
       <mat-checkbox color="primary">Primary Checkbox</mat-checkbox>
       <br />
@@ -35,22 +127,20 @@
       <br />
       <mat-checkbox color="warn">Warn Checkbox</mat-checkbox>
       <br /><br />
-
-      <!-- Select -->
-      <mat-form-field>
-        <mat-select placeholder="Primary Select" color="primary">
-          <mat-option value="option1">Option 1</mat-option>
-          <mat-option value="option2">Option 2</mat-option>
-          <mat-option value="option3">Option 3</mat-option>
-        </mat-select>
-      </mat-form-field>
-      <br />
-      <!-- Input -->
-      <mat-form-field>
-        <input matInput placeholder="Primary Input" color="primary" />
-      </mat-form-field>
     </div>
-    <div class="col-4">
+    <div class="col-2 dracula-theme">
+      <!-- Checkbox -->
+      <mat-checkbox color="primary">Primary Checkbox</mat-checkbox>
+      <br />
+      <mat-checkbox color="accent">Accent Checkbox</mat-checkbox>
+      <br />
+      <mat-checkbox color="warn">Warn Checkbox</mat-checkbox>
+      <br /><br />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-2 light-theme">
       <!-- Radio Button -->
       <mat-radio-group>
         <mat-radio-button value="1" color="primary"
@@ -64,7 +154,49 @@
         <mat-radio-button value="3" color="warn">Warn Radio</mat-radio-button>
       </mat-radio-group>
       <br /><br />
-
+    </div>
+    <div class="col-2 dracula-theme">
+      <!-- Radio Button -->
+      <mat-radio-group>
+        <mat-radio-button value="1" color="primary"
+          >Primary Radio</mat-radio-button
+        >
+        <br />
+        <mat-radio-button value="2" color="accent"
+          >Accent Radio</mat-radio-button
+        >
+        <br />
+        <mat-radio-button value="3" color="warn">Warn Radio</mat-radio-button>
+      </mat-radio-group>
+      <br /><br />
+    </div>
+    <div class="col-2 light-theme">
+      <!-- Slider -->
+      <mat-slider
+        min="0"
+        max="100"
+        step="1"
+        thumbLabel
+        color="primary"
+      ></mat-slider>
+      <br />
+      <mat-slider
+        min="0"
+        max="100"
+        step="1"
+        thumbLabel
+        color="accent"
+      ></mat-slider>
+      <br />
+      <mat-slider
+        min="0"
+        max="100"
+        step="1"
+        thumbLabel
+        color="warn"
+      ></mat-slider>
+    </div>
+    <div class="col-2 dracula-theme">
       <!-- Slider -->
       <mat-slider
         min="0"

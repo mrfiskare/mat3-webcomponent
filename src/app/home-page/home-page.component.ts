@@ -17,6 +17,7 @@ import { MatRadioButton, MatRadioGroup } from '@angular/material/radio';
 import { MatCheckbox } from '@angular/material/checkbox';
 import { MatInput } from '@angular/material/input';
 import { MatIcon } from '@angular/material/icon';
+import { MatDivider } from '@angular/material/divider';
 
 @Component({
   selector: 'app-home-page',
@@ -40,7 +41,8 @@ import { MatIcon } from '@angular/material/icon';
     MatAnchor,
     MatIcon,
     MatHint,
-    MatLabel
+    MatLabel,
+    MatDivider
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'

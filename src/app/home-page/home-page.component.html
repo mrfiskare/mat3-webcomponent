@@ -1,8 +1,9 @@
 <mat-toolbar color="primary" class="light-theme">My Toolbar</mat-toolbar>
 
-<div class="container light-theme">
+<div class="container" style="min-width: 500px">
+  <!-- [MAT CARD] Routing Test -->
   <div
-    class="row mt-3 mb-5"
+    class="row mt-3 mb-5 light-theme"
     style="display: flex; justify-content: center; align-items: center"
   >
     <mat-card class="text-center w-50 py-3">
@@ -19,6 +20,112 @@
       </mat-card-actions>
     </mat-card>
   </div>
+
+  <!-- [PRIMARY BUTTONS] -->
+  <div class="row p-1" style="align-items: center">
+    <div class="col-md-12 col-lg-6">
+      <div class="row" style="align-items: center">
+        <div class="col-6 dracula-theme" style="text-align: right">
+          <button mat-raised-button color="primary">
+            Primary Button (Raised)
+          </button>
+        </div>
+        <div class="col-6 light-theme" style="text-align: left">
+          <button mat-raised-button color="primary">
+            Primary Button (Raised)
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-6">
+      <div class="row" style="align-items: center">
+        <div class="col-6 dracula-theme" style="text-align: right">
+          <button mat-button color="primary">Primary Button</button>
+        </div>
+        <div class="col-6 light-theme" style="text-align: left">
+          <button mat-button color="primary">Primary Button</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <mat-divider class="my-2"></mat-divider>
+
+  <!-- [ACCENT BUTTONS] -->
+  <div class="row p-1">
+    <div class="col-md-12 col-lg-6">
+      <div class="row" style="align-items: center">
+        <div class="col-6 dracula-theme" style="text-align: right">
+          <button mat-raised-button color="accent">
+            Accent Button (Raised)
+          </button>
+        </div>
+        <div class="col-6 light-theme" style="text-align: left">
+          <button mat-raised-button color="accent">
+            Accent Button (Raised)
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-6">
+      <div class="row" style="align-items: center">
+        <div class="col-6 dracula-theme" style="text-align: right">
+          <button mat-button color="primary">Primary Button</button>
+        </div>
+        <div class="col-6 light-theme" style="text-align: left">
+          <button mat-button color="primary">Primary Button</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <mat-divider class="my-2"></mat-divider>
+
+  <!-- [MAT CARD] Compare button styles -->
+  <div class="row p-1" style="align-items: center">
+    <div class="col-3 pr-5 dracula-theme" style="text-align: right">
+      <button mat-raised-button color="primary">Primary Button (Raised)</button>
+    </div>
+    <div class="col-3 pl-5 light-theme" style="text-align: left">
+      <button mat-raised-button color="primary">Primary Button (Raised)</button>
+    </div>
+    <div class="col-3 pr-5 dracula-theme" style="text-align: right">
+      <button mat-button color="primary">Primary Button</button>
+    </div>
+    <div class="col-3 pl-5 light-theme" style="text-align: left">
+      <button mat-button color="primary">Primary Button</button>
+    </div>
+  </div>
+  <div class="row p-1" style="align-items: center">
+    <div class="col-3 pr-5 dracula-theme" style="text-align: right">
+      <button mat-raised-button color="accent">Accent Button (Raised)</button>
+    </div>
+    <div class="col-3 pl-5 light-theme" style="text-align: left">
+      <button mat-raised-button color="accent">Accent Button (Raised)</button>
+    </div>
+    <div class="col-3 pr-5 dracula-theme" style="text-align: right">
+      <button mat-button color="accent">Accent Button</button>
+    </div>
+    <div class="col-3 pl-5 light-theme" style="text-align: left">
+      <button mat-button color="accent">Accent Button</button>
+    </div>
+  </div>
+
+  <div class="row p-1" style="align-items: center">
+    <div class="col-3 pr-5 dracula-theme" style="text-align: right">
+      <button mat-raised-button color="warn">Warn Button (Raised)</button>
+    </div>
+    <div class="col-3 pl-5 light-theme" style="text-align: left">
+      <button mat-raised-button color="warn">Warn Button (Raised)</button>
+    </div>
+    <div class="col-3 pr-5 dracula-theme" style="text-align: right">
+      <button mat-button color="warn">Warn Button</button>
+    </div>
+    <div class="col-3 pl-5 light-theme" style="text-align: left">
+      <button mat-button color="warn">Warn Button</button>
+    </div>
+  </div>
+
   <div class="row">
     <div class="col-2 light-theme">
       <form>

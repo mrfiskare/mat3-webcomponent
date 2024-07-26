@@ -11,103 +11,12 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-$dracula-primary: (
-  50: #e8ebf2,
-  100: #c6ccdf,
-  200: #a1acca,
-  300: #7e8cb3,
-  400: #6273a4,
-  500: #475b96,
-  600: #41538d,
-  700: #384981,
-  800: #313f75,
-  900: #232e62,
-  contrast: (
-    50: #8d8d88,
-    100: #aeaea8,
-    200: #d2d2cd,
-    300: #e4e4de,
-    400: #efefe9,
-    500: #f8f8f2,
-    600: #f8f8f2,
-    700: #f8f8f2,
-    800: #f8f8f2,
-    900: #f8f8f2
-  )
-);
-
-$dracula-secondary: (
-  50: #f1e5fe,
-  100: #d8bffb,
-  200: #be93f9,
-  300: #a166f0,
-  400: #8943e3,
-  500: #721ad6,
-  600: #6714d0,
-  700: #5806c8,
-  800: #4900c0,
-  900: #2f00b1,
-  contrast: (
-    50: #9a8c35,
-    100: #b7b344,
-    200: #c9cb4b,
-    300: #dbe254,
-    400: #e6f259,
-    500: #ecf672,
-    600: #f1fa8c,
-    700: #f2f9aa,
-    800: #f8fbcc,
-    900: #fcfeeb
-  )
-);
-
-$dracula-warn: (
-  50: #ffecef,
-  100: #ffcfd5,
-  200: #f99d9e,
-  300: #f37678,
-  400: #ff5555,
-  500: #ff4239,
-  600: #f7393a,
-  700: #e42e33,
-  800: #d7262c,
-  900: #c8191f,
-  contrast: (
-    50: #df5a32,
-    100: #ea7238,
-    200: #f1813c,
-    300: #f98f40,
-    400: #fe9a43,
-    500: #fea954,
-    600: #ffb86c,
-    700: #ffcc93,
-    800: #ffe0bd,
-    900: #fff3e4
-  )
-);
-
-$dracula-primary-palette: mat.define-palette($dracula-primary);
-$dracula-secondary-palette: mat.define-palette($dracula-secondary);
-$dracula-warn-palette: mat.define-palette($dracula-warn);
-
-$dracula-theme: mat.define-light-theme(
-  (
-    color: (
-      primary: $dracula-primary-palette,
-      accent: $dracula-secondary-palette,
-      warn: $dracula-warn-palette
-    ),
-    typography: mat.define-typography-config(),
-    density: 0
-  )
-);
-
 $m3-dark-theme: matx.define-theme(
   (
     color: (
       theme-type: dark,
-      primary: matx.$m3-yellow-palette,
-      tertiary: matx.$m3-blue-palette
+      primary: matx.$m3-green-palette,
+      tertiary: matx.$m3-red-palette
     )
   )
 );
@@ -115,15 +24,15 @@ $m3-dark-theme: matx.define-theme(
 $m3-light-theme: matx.define-theme(
   (
     color: (
-      primary: matx.$m3-yellow-palette,
-      tertiary: matx.$m3-blue-palette
+      primary: matx.$m3-orange-palette,
+      tertiary: matx.$m3-red-palette
     )
   )
 );
 
-.dracula-theme {
-  @include mat.all-component-themes($dracula-theme);
-}
+//.dracula-theme {
+//  @include mat.all-component-themes($dracula-theme);
+//}
 
 .dark-theme {
   @include mat.all-component-themes($m3-dark-theme);
